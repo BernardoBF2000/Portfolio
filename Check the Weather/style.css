@@ -1,0 +1,68 @@
+#map {
+
+    min-height: 30rem;
+}
+
+@media only screen and (max-width: 992px) {
+
+    #map {
+
+        min-height: 20rem;
+    }
+
+    #forecast {
+
+        display: none !important;
+    }
+}
+.card .wind-indicator {
+
+    min-width: 50px;
+}
+
+#navbar .btn {
+
+    font-size: 1.25rem;
+}
+
+.city-photo {
+
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.weather-icon {
+
+    width: 5rem;
+}
+.weather-icon-forecast {
+
+    width: 3rem;
+}
+
+.fav-btn {
+
+    float: right;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.fav-btn:hover {
+
+    color: var(--primary);
+}
+
+.flag-icon {
+
+    height: 20px;
+    margin-right: 0.25rem;
+    vertical-align: baseline;
+}
+
+.card {
+    border-radius: 1rem;
+}
