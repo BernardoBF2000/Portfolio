@@ -1,0 +1,746 @@
+/* -- THEME -- */
+
+:root {
+
+	--main-color: #386895;
+	--shadow-color: #273b7a;
+	--text-color: #9d9d9d;
+	--s-text-color: #ffffff;
+	--dark-color: #222222;
+	--grey-color: #e1e1e1;
+	--success-color: #389568;
+	--error-color: #953838;
+	--warning-color: #b39f24;
+}
+
+body {
+
+	overflow-x: hidden;
+}
+
+a:focus {
+
+	outline: none;
+}
+
+a:hover {
+
+	text-decoration: none;
+}
+
+input:focus {
+
+	outline: none;
+}
+
+.form-control {
+
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	border: 2px solid var(--grey-color);
+	background-color: var(--grey-color);
+	border-radius: 0px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	box-shadow: none;
+}
+
+#searchBarTitle, #searchBarRobot {
+
+	border: 2px solid var(--grey-color) !important;
+	background-color: var(--grey-color) !important;
+	border-radius: 0px !important;
+	margin-top: 8px !important;
+	margin-bottom: 8px !important;
+	box-shadow: none !important;
+	color: #555 !important;
+}
+
+.form-control:focus {
+
+	outline: none;
+	box-shadow: none;
+	/*border-color: var(--main-color);*/
+}
+
+.form-group {
+
+	text-align: center;
+}
+
+input[class~=ng-invalid], input[class~=ng-invalid]:focus, textarea[class~=ng-invalid], textarea[class~=ng-invalid]:focus {
+
+	border-color: var(--error-color);
+	background-color: var(--error-color);
+	color: var(--s-text-color);
+}
+
+input[class~=ng-valid], input[class~=ng-valid]:focus, textarea[class~=ng-valid], textarea[class~=ng-valid]:focus {
+
+	border-color: var(--success-color);
+	background-color: var(--success-color);
+	color: var(--s-text-color);
+}
+
+.dropdown-menu {
+
+	background-color: var(--dark-color);
+	border: none;
+	border-radius: 0px;
+	padding: 0px;
+}
+
+.dropdown-menu>li>a {
+
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	color: var(--text-color);
+	padding: 10px 20px;
+}
+
+.dropdown-menu>li>a:hover {
+
+	color: #fff;
+	background-color: var(--main-color);
+}
+
+.dropdown-menu>li>a:focus {
+
+	color: #fff;
+	background-color: transparent;
+}
+
+.dropdown-menu>li>a:focus:hover {
+
+	color: #fff;
+	background-color: var(--main-color);
+}
+
+#loader {
+
+	animation: spin 1s linear infinite;
+	border: 16px solid rgba(0, 0, 0, 0);
+	border-radius: 50%;
+	border-top: 16px solid var(--main-color);
+	height: 120px;
+	left: calc(50% - 60px);
+	position: absolute;
+	top: calc(50% - 60px);
+	width: 120px;
+}
+
+#loader-container {
+
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 20000;
+}
+
+@keyframes spin {
+
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.checkbox {
+
+	text-align: center;
+}
+
+.checkbox label, .radio label {
+
+	font-weight: 700;
+}
+
+input[type=checkbox], input[type=radio] {
+
+	margin: 0px 0px 0px -20px;
+}
+
+input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
+
+	outline: none;
+}
+
+input[type=checkbox] {
+
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	-webkit-appearance: none;
+	background-color: var(--text-color);
+	border: none;
+	box-shadow: none;
+	padding: 10px;
+	border-radius: 0px;
+	display: inline-block;
+	position: relative;
+}
+
+input[type=checkbox]:hover {
+
+	cursor: pointer;
+}
+
+input[type=checkbox]:active, input[type=checkbox]:checked:active {
+
+	box-shadow: none;
+}
+
+input[type=checkbox]:checked {
+
+	background-color: var(--main-color);
+	border: none;
+	box-shadow: none;
+	color: var(--s-text-color);
+}
+
+input[type=checkbox]:checked:after {
+
+	content: "\2714";
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: var(--s-text-color);
+}
+
+.valid-field {
+
+	color: var(--success-color);
+}
+
+.invalid-field {
+
+	color: var(--error-color);
+}
+
+.row {
+
+	margin: 0px;
+}
+
+.title {
+
+	padding: 50px;
+	font-family: Oswald, "Roboto Condensed", "Fira Sans";
+	font-weight: 800;
+	font-size: 48px;
+	text-align: center;
+}
+
+@media (max-width: 991px) {
+
+	.title {
+
+		padding: 25px;
+		font-size: 30px;
+	}
+
+	.subtitle {
+
+		padding: 15px;
+		font-size: 20pxpx;
+	}
+}
+
+@media (max-width: 451px) {
+
+	.title {
+
+		padding: 15px;
+		font-size: 24px;
+	}
+
+	.subtitle {
+
+		padding: 10px;
+		font-size: 18px;
+	}
+}
+
+.subtitle {
+
+	padding: 25px;
+	font-family: Oswald, "Roboto Condensed", "Fira Sans";
+	font-weight: 800;
+	font-size: 36px;
+	text-align: center;
+}
+
+#form-create-nav {
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 1000;
+}
+
+#form-create-add-step, #btn-edit-ingredients, .form-create-remove-step {
+
+	color: var(--dark-color) !important;
+}
+
+#form-create-add-step:hover, #btn-edit-ingredients:hover, .form-create-remove-step:hover {
+
+	color: var(--s-text-color) !important;
+}
+
+@media (max-width: 799px) {
+
+	#navbar-btn-create {
+
+		display: none;
+	}
+}
+
+@media (max-width: 324px) {
+
+	.img-container {
+
+		max-height: 200px;
+	}
+
+	.recipe-prop {
+
+		font-size: 12px !important;
+	}
+
+	.recipe-caption .title {
+
+		font-size: 25px !important;
+	}
+}
+
+@media (max-width: 1280px) and (min-width: 990px) {
+
+	.img-container {
+
+		max-height: 200px;
+	}
+
+	.recipe-prop {
+
+		font-size: 12px !important;
+	}
+
+	.recipe-caption .title {
+
+		font-size: 25px !important;
+	}
+}
+
+::-webkit-scrollbar {
+
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+
+	background: var(--grey-color);
+}
+
+::-webkit-scrollbar-thumb {
+
+	background: var(--main-color);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+	background: var(--main-color);
+}
+
+.btn-yes:hover {
+
+	background-color: var(--success-color);
+	color: var(--s-text-color);
+}
+
+.btn-yes:focus, .btn-no:focus, .btn-yes-active:focus, .btn-no-active:focus {
+
+	color: var(--s-text-color);
+}
+
+.btn-no:hover {
+
+	background-color: var(--error-color);
+	color: var(--s-text-color);
+}
+
+.btn-yes-active {
+
+	background-color: var(--success-color);
+	color: var(--s-text-color);
+}
+
+.btn-no-active {
+
+	background-color: var(--error-color);
+	color: var(--s-text-color);
+}
+
+.btn-yes-active:hover {
+
+	background-color: var(--success-color);
+	color: var(--s-text-color);
+}
+
+.btn-no-active:hover {
+
+	background-color: var(--error-color);
+	color: var(--s-text-color);
+}
+
+.btn {
+
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	padding: 15px;
+	border: none;
+	border-radius: 0px;
+	font-size: 16px;
+}
+
+.btn:active {
+
+	box-shadow: none;
+	outline: none;
+}
+
+.btn:focus {
+
+	outline: none;
+}
+
+.btn:active:focus {
+
+	outline: none;
+}
+
+.btn-default {
+
+	color: var(--text-color);
+	background-color: transparent;
+}
+
+.btn-default:active {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-default:focus {
+
+	color: var(--s-text-color);
+	background-color: transparent;
+}
+
+.btn-default:hover {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-default:active:focus {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-default:active:hover {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-default:focus:hover {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-default[disabled], .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover, .btn-default[disabled]:active:focus, .btn-default[disabled]:active:hover, .btn-default[disabled]:focus:hover {
+
+	background-color: transparent;
+	color: var(--text-color);
+	cursor: default;
+	opacity: 0.25;
+}
+
+.btn.active {
+
+	box-shadow: none;
+}
+
+.btn.active:active {
+
+	box-shadow: none;
+	outline: none;
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn.active:focus {
+
+	outline: none;
+}
+
+.btn-default.active {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-default.active:focus {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-default.active:hover {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.open>.dropdown-toggle.btn-default {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.open>.dropdown-toggle.btn-default:focus {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.open>.dropdown-toggle.btn-default:hover {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.div-details {
+
+	padding: 15px 0px;
+	width: 100%;
+	background-color: var(--dark-color);
+	color: var(--text-color);
+	border: none;
+	border-radius: 0px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.btn-form-create {
+
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	padding: 15px 0px;
+	width: 100%;
+	background-color: var(--dark-color);
+	color: var(--text-color);
+	border: none;
+	border-radius: 0px;
+	font-size: 16px;
+}
+
+.btn-form-create:active {
+
+	box-shadow: none;
+	outline: none;
+	color: var(--s-text-color);
+}
+
+.btn-form-create:focus {
+
+	outline: none;
+	color: var(--s-text-color);
+}
+
+.btn-form-create:active:focus {
+
+	box-shadow: none;
+	outline: none;
+	color: var(--s-text-color);
+}
+
+.btn-form-create:hover {
+
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-form-create:active:hover {
+
+	box-shadow: none;
+	outline: none;
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-form-create:focus:hover {
+
+	outline: none;
+	color: var(--s-text-color);
+	background-color: var(--main-color);
+}
+
+.btn-form-create[disabled], .btn-form-create[disabled]:active, .btn-form-create[disabled]:focus, .btn-form-create[disabled]:hover, .btn-form-create[disabled]:active:focus, .btn-form-create[disabled]:active:hover, .btn-form-create[disabled]:focus:hover {
+
+	background-color: var(--dark-color);
+	color: var(--text-color);
+	cursor: default;
+}
+
+.recipe {
+	padding: 0px;
+	margin: 10px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 5px var(--dark-color);
+	z-index: 100;
+}
+
+.recipe:hover .img-container {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+
+.img-container {
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	-webkit-filter: grayscale(35%);
+	filter: grayscale(35%);
+	height: 250px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.recipe-caption {
+
+	padding: 5px;
+}
+
+.recipe-caption .title {
+	
+	font-family: Oswald, "Roboto Condensed", "Fira Sans";
+	font-size: 35px;
+	font-weight: bold;
+	word-wrap: normal;
+	color: #333333;
+	padding: 5px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.recipe-prop {
+
+	display: grid;
+	grid-template-columns: auto auto;
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+}
+
+a:focus {
+
+	text-decoration: none;
+}
+
+hr {
+
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border-top: 2px solid var(--main-color);
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+
+	max-height: none;
+}
+
+.navbar-collapse.in {
+
+	overflow-y: none;
+}
+
+.note-editable {
+
+	text-align: initial;
+}
+
+.btn-sm {
+
+	color: var(--dark-color);
+}
+
+.dropdown-menu .btn-sm {
+
+	color: var(--text-color);
+}
+
+.dropdown-menu .btn-sm:hover {
+
+	color: var(--s-text-color);
+}
+
+.note-current-color-button:hover {
+
+	color: var(--dark-color);
+}
+
+.footer {
+
+	background-color: var(--dark-color);
+	padding: 100px;
+	color: var(--text-color);
+	font-size: 18px;
+}
+
+@media (max-width: 799px) {
+
+	.footer {
+
+		padding: 20px;
+	}
+}
+
+.btn-rating {
+
+	font-size: 24px;
+	padding: 5px;
+	background-color: transparent;
+}
+
+.btn-rating:focus {
+
+	outline: none;
+}
+
+.ng-enter {
+
+	-webkit-transition: 1000ms;
+	-moz-transition: 1000ms;
+	-o-transition: 1000ms;
+	opacity: 0;
+}
+
+.ng-enter-active {
+
+	opacity: 1;
+}

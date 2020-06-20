@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cookit</string>
+    <string name="anterior">Anterior</string>
+    <string name="seguinte">Seguinte</string>
+    <string name="nada_a_apresentar">Nada a apresentar</string>
+    <string name="title">Title</string>
+    <string name="bem_vindo">Bem-Vindo</string>
+    <string name="textview">TextView</string>
+    <string name="email">Email</string>
+    <string name="palavra_passe">Palavra-Passe</string>
+    <string name="iniciar_sess_o">Iniciar Sessão</string>
+</resources>
